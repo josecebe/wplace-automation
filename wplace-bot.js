@@ -149,8 +149,8 @@ class WPlaceBot {
         if (!this.canvas) return false;
 
         const rect = this.canvas.getBoundingClientRect();
-        const canvasX = x + rect.left;
-        const canvasY = y + rect.top;
+        const canvasX = (x + rect.left) * 24;
+        const canvasY = (y + rect.top) * 24;
 
         // Cria eventos de mouse
         const events = ['mousedown', 'mouseup', 'click'];
