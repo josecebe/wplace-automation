@@ -89,6 +89,7 @@ class WPlaceBot {
 
         // Converte cor alvo para RGB
         const target = this.hexToRgb(targetColor);
+        console.log(`target color: ${target}`);
         if (!target) return closestColor;
 
         this.colorPalette.forEach(paletteColor => {
