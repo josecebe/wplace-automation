@@ -56,7 +56,7 @@ class WPlaceBot {
     // Encontra a paleta de cores
     findColorPalette() {
         // Procura por elementos que podem ser cores
-        const colorElements = document.querySelectorAll('[style*="background-color"], .color, [data-color], .palette-color');
+        const colorElements = document.querySelectorAll('.tooltip .rounded-xl');
         
         colorElements.forEach(element => {
             const bgColor = window.getComputedStyle(element).backgroundColor;
